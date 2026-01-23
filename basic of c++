@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+#include<string>
+using namespace std;
+    class Person{
+        private:
+        int age;
+        string name;
+        public:
+        void setData(string n,int g){
+        name = n;
+        age = g;
+        }
+        void displayData(){
+            cout<<"Name:"<<name<<"," "age:"<<age<<endl;
+        }
+        };
+        int main(){
+            Person person1;
+            person1.setData("rajshamani",25);
+            person1.displayData();
+            Person person2;
+            person2.setData("vaishnavigupta",19);
+            person2.displayData();
+             return 0;
+    }
+  
