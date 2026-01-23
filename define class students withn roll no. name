@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+#include<string>
+using namespace std;
+    class student{
+        private:
+        int rollnumber;
+        string name;
+        public:
+        void setData(int r, string n){
+          rollnumber=r;
+          name=n;
+        }
+        void displayDetail(){
+            cout<<"rollnumber"<<rollnumber<<""<<",Name:"<<name<<endl;
+        }
+    };
+    int main(){
+        const int totalstudents =10;
+        student student[totalstudents];
+        for(int i =0;i<totalstudents;i++){
+            int roll;
+            string name;
+            cout<<"Enter the rollnumber of student"<<i+1<<":";
+            cin>>roll;
+            cin.ignore();
+            cout<<"enter the name of student"<<i+1<<":";
+            getline(cin,name);
+            student[i].setData(roll,name);
+        }
+        cout<<"\n------student details-------\n";
+        for(int i =0;i<totalstudents;i++){
+            student[i].displayDetail();
+        }
+        return 0;
+    }
+  
