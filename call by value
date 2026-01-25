@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+void fun(int& x){
+    x--;
+}
+int main (){
+    int a= 5;
+    cout<<a<<endl;
+    fun(a);
+    cout<<a;
+    return 0;
+}
