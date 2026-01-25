@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+#include<string>
+using namespace std;
+int main(){
+    string s;
+    cout<<"enter a string:";
+    cin>>s;
+    bool hasDigit = false;
+    bool hasAlpha = false;
+    for(char c:s){
+        if(isdigit(c))
+        hasDigit = true;
+        else if(isalpha(c))
+        hasAlpha = true;
+        if(hasDigit && hasAlpha)
+        break;
+    }
+    if(hasDigit & hasAlpha)
+    cout<<"yes"<<endl;
+    else 
+    cout<<"no"<<endl;
+    return 0;
+}
