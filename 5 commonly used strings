@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+#include<string>
+using namespace std;
+int main (){
+   string str1 ="hello";
+   string str2 ="world";
+   cout<<"length of string:"<<str1.length()<<endl;
+   if(str1.empty())
+   cout<<"string is empty"<<endl;
+   else cout<<"string is not empty"<<endl;
+   str1.append(str2);//or: str1 +=str2
+   cout<<"after the append of string:"<<str1<<endl;
+   string sub=str1.substr(5,6);
+   cout<<"string after substring:"<<sub<<endl;
+   size_t pos = str1.find("world");
+   if(pos!=string::npos)
+   cout<<"world found at index"<<pos<<endl;
+   else
+   cout<<"world not found at index"<<pos<<endl;
+    return 0;
+}
