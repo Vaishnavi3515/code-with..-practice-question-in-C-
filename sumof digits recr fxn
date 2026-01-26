@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int SumofDigits(int n){
+if(n==0)
+  return 0;
+  return (n%10)+SumofDigits(n/10);
+}
+int main (){
+    int num;
+    cout<<"enter the number:"<<endl;
+    cin>>num;
+    cout<<"Sum of Digits:"<<SumofDigits(num)<<endl;
+    return 0;
+}
