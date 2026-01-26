@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+ int n, rev=0,digits;
+ cout<<"enter the integers:"<<endl;
+ cin>>n;
+ while(n>0){
+ digits= n%10;
+ rev= rev*10+digits;
+ n=n/10;
+}
+ cout<<"reversed number:"<<rev<<endl;
+            return 0;
+        }
