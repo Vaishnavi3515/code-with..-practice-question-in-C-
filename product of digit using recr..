@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int ProductofDigits(int n){
+    if(n==0)
+    return 1;
+    return (n%10)*ProductofDigits(n/10);
+}
+int main(){
+    int num;
+    cout<<"enter the number:";
+    cin>>num;
+    if(num<0)
+    num = -num;
+    cout<<"Product of Digits:"<<ProductofDigits(num)<<endl;
+    return 0;
+}
