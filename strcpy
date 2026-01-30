@@ -1,0 +1,10 @@
+#include <bits/stdc++.h>
+#include<cstring>
+using namespace std;
+int main() {
+    char scr[]="hello,C++!";
+     char dest[20];
+     strcpy(dest,scr);
+         cout<<"copied string:"<<dest<<endl;
+    return 0;
+}
