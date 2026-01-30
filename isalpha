@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+#include<cctype>
+using namespace std;
+int main() {
+    char ch='p';
+    if(isalpha(ch))
+    cout<<ch<<" is alpha."<<endl;
+    else
+    cout<<ch<<" is not alpha."<<endl;
+    return 0;
+}
