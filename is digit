@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+#include<cctype>
+using namespace std;
+int main() {
+    char ch='8';
+    if(isdigit(ch))
+    cout<<ch<<" is digit."<<endl;
+    else
+    cout<<ch<<" is not digit."<<endl;
+    return 0;
+}
