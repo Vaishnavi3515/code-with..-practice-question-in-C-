@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+#include<cctype>
+using namespace std;
+int main() {
+    char ch='@';
+    if(isalnum(ch))
+    cout<<ch<<" is alphanumeric."<<endl;
+    else
+    cout<<ch<<" is not alphanumeric."<<endl;
+    return 0;
+}
