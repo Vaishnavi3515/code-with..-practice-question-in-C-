@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+#include<cstring>
+using namespace std;
+int main() {
+	string s;
+	cout<<"enter the string:"<<endl;
+	getline(cin,s);
+	sort(s.begin(),s.end());
+	cout<<"Aphabetically sorted string "<<s<<endl;
+	
+}
