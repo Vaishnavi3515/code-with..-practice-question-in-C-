@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+#include <cstring>  /
+using namespace std;
+
+int main() {
+   char str[200], substr[100];
+
+   std::cout << "Enter the main string: ";
+  std::cin.getline(str, 200);
+
+   std::cout << "Enter the substring to search: ";
+  std::cin.getline(substr, 100);
+
+// strstr() returns a pointer to the first occurrence of substr in str, or nullptr if not found
+  if (strstr(str, substr) != nullptr) {
+      std::cout << "Substring found in the string." << std::endl;
+  } else {
+       std::cout << "Substring not found in the string." << std::endl;
+  }
+
+  return 0;
+}
