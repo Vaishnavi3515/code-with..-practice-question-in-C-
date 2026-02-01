@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+#include<cstring>
+using namespace std;
+int main(){
+    string s;
+    getline(cin,s);
+   string rev =s;
+   reverse(rev.begin(),rev.end());
+   if(rev==s)
+   cout<<"is a palindrome"<<endl;
+   else
+   cout<<"not a pailndrome"<<endl;
+}
