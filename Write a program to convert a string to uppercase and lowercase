@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+#include<string>
+#include<cctype>
+using namespace std;
+
+int main() {
+   string s;
+   cout<<"enter the string"<<endl;
+   getline(cin,s);
+   string upper =s,lower=s;
+   for(char &c:upper)c=toupper(c);
+   for(char &c:lower)c=tolower(c);
+   
+   cout<<"uppercase "<<upper<<endl;
+   cout<<"lowercase "<<lower<<endl;
+}
+   
